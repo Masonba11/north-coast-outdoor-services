@@ -30,16 +30,13 @@ export function buildMetadata({
 }: BuildMetadataInput): Metadata {
   const url = absoluteUrl(path);
   const imageUrl = absoluteUrl(image);
-  const ogTitle = openGraphTitle ?? title;
   const ogDescription = openGraphDescription ?? description;
 
   const fullTitle = title.includes("North Coast Outdoor Services")
     ? title
     : `${title} | North Coast Outdoor Services`;
 
-  const fullOgTitle = openGraphTitle
-    ? openGraphTitle
-    : fullTitle;
+  const fullOgTitle = openGraphTitle ?? fullTitle;
 
   return {
     title: {

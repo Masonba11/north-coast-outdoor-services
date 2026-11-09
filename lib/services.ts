@@ -12,6 +12,7 @@ export type Service = {
   cardDescription: string;
   heroSubheading: string;
   image: string;
+  imageAlt: string;
   seoTitle: string;
   seoDescription: string;
   keywords: string[];
@@ -32,6 +33,8 @@ export const services: Service[] = [
     heroSubheading:
       "Residential and commercial window cleaning in Vancouver, WA and nearby Southwest Washington communities.",
     image: "/images/window-cleaning.jpg",
+    imageAlt:
+      "Traditional Southwest Washington suburban home with clean white-trimmed windows and evergreen trees",
     seoTitle: "Window Cleaning Vancouver WA | North Coast Outdoor Services",
     seoDescription:
       "Professional window cleaning in Vancouver, WA. Residential and commercial window washers serving Camas, Washougal, Battle Ground, and nearby cities. Free estimates.",
@@ -108,6 +111,8 @@ export const services: Service[] = [
     heroSubheading:
       "Exterior pressure washing for driveways, walkways, siding, and outdoor surfaces around Vancouver, WA.",
     image: "/images/pressure-washing.jpg",
+    imageAlt:
+      "Two-story suburban home with asphalt driveway, garage, and landscaped front yard ready for pressure washing",
     seoTitle: "Pressure Washing Vancouver WA | North Coast Outdoor Services",
     seoDescription:
       "Pressure washing services in Vancouver, WA for driveways, walkways, and exterior surfaces. Serving Camas, Washougal, Battle Ground, and nearby Southwest Washington cities.",
@@ -184,6 +189,8 @@ export const services: Service[] = [
     heroSubheading:
       "Soft washing for Vancouver, WA homes dealing with algae, mildew, and organic buildup on exterior surfaces.",
     image: "/images/soft-washing.jpg",
+    imageAlt:
+      "Craftsman-style neighborhood home with siding and trim suited for soft washing in Southwest Washington",
     seoTitle: "Soft Washing Vancouver WA | North Coast Outdoor Services",
     seoDescription:
       "Soft washing in Vancouver, WA for siding, exteriors, and delicate outdoor surfaces. Low-pressure cleaning for algae and mildew across Clark County and nearby cities.",
@@ -261,6 +268,8 @@ export const services: Service[] = [
     heroSubheading:
       "Gutter cleaning and maintenance support for Vancouver, WA homes dealing with leaves, needles, and seasonal debris.",
     image: "/images/gutter-cleaning.jpg",
+    imageAlt:
+      "Traditional Pacific Northwest home with visible roofline and gutters surrounded by trees and autumn leaves",
     seoTitle: "Gutter Cleaning Vancouver WA | North Coast Outdoor Services",
     seoDescription:
       "Gutter cleaning in Vancouver, WA to clear leaves and debris and support proper drainage. Serving Camas, Washougal, Battle Ground, Ridgefield, and nearby cities.",

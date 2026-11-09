@@ -18,7 +18,7 @@ export function Hero({
   title,
   subtitle,
   imageSrc = "/images/hero-home.jpg",
-  imageAlt = "Pacific Northwest home exterior",
+  imageAlt = "Typical Southwest Washington suburban home exterior",
   primaryHref = "/contact",
   primaryLabel = "Get a Free Quote",
   showCallButton = true,

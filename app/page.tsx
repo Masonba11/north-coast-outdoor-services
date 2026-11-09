@@ -99,6 +99,7 @@ export default function HomePage() {
                 description={service.cardDescription}
                 href={service.href}
                 image={service.image}
+                imageAlt={service.imageAlt}
               />
             ))}
           </div>

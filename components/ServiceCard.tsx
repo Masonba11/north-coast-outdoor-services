@@ -7,15 +7,16 @@ type ServiceCardProps = {
   description: string;
   href: string;
   image: string;
+  imageAlt?: string;
 };
 
-export function ServiceCard({ title, description, href, image }: ServiceCardProps) {
+export function ServiceCard({ title, description, href, image, imageAlt }: ServiceCardProps) {
   return (
     <article className="group overflow-hidden rounded-[1.75rem] bg-white shadow-[0_18px_50px_rgba(16,20,18,0.08)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_24px_60px_rgba(16,20,18,0.12)]">
       <div className="relative aspect-[4/3] overflow-hidden">
         <Image
           src={image}
-          alt={title}
+          alt={imageAlt || title}
           fill
           className="object-cover transition duration-500 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, 33vw"

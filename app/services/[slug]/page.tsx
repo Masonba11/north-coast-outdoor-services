@@ -89,7 +89,7 @@ export default async function ServicePage({ params }: PageProps) {
           <div className="relative min-h-[20rem] overflow-hidden rounded-[2rem] sm:min-h-[26rem]">
             <Image
               src={service.image}
-              alt={service.name}
+              alt={service.imageAlt}
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"

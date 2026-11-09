@@ -29,6 +29,7 @@ export default function ServicesIndexPage() {
               description={service.cardDescription}
               href={service.href}
               image={service.image}
+              imageAlt={service.imageAlt}
             />
           ))}
         </div>

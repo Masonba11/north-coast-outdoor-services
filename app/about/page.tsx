@@ -20,6 +20,7 @@ export default function AboutPage() {
         title="Your Local Exterior Cleaning Team in Southwest Washington"
         subtitle="North Coast Outdoor Services helps homeowners and businesses keep exteriors looking clean with professional window cleaning, soft washing, pressure washing, and gutter cleaning."
         imageSrc="/images/about-exterior.jpg"
+        imageAlt="Typical Craftsman-style suburban home with siding, garage, and evergreen trees in Southwest Washington"
         compact
       />
 

@@ -3,19 +3,19 @@ import Image from "next/image";
 const galleryItems = [
   {
     src: "/images/gallery-1.jpg",
-    alt: "Modern home exterior with large windows",
+    alt: "Well-kept Craftsman-style suburban home in a Southwest Washington neighborhood",
   },
   {
     src: "/images/gallery-2.jpg",
-    alt: "Clean residential exterior and landscaping",
+    alt: "Two-story suburban home with driveway, garage, and landscaped front yard",
   },
   {
     src: "/images/gallery-3.jpg",
-    alt: "Contemporary home facade detail",
+    alt: "Traditional two-story residential home with clean windows and visible gutters",
   },
   {
     src: "/images/gallery-4.jpg",
-    alt: "Bright home exterior ready for cleaning presentation",
+    alt: "Typical neighborhood home with concrete driveway and exterior siding ready for cleaning",
   },
 ];
 
@@ -28,8 +28,9 @@ export function Gallery() {
             Exterior Details Worth Showing Off
           </h2>
           <p className="mt-4 text-muted">
-            Photography placeholders for future project images. Real completed-project
-            photos can replace these once supplied by the team.
+            Representative neighborhood homes similar to properties we serve across Vancouver,
+            Camas, Washougal, Battle Ground, and Ridgefield. Real completed-project photos can
+            replace these once supplied by the team.
           </p>
         </div>
 
