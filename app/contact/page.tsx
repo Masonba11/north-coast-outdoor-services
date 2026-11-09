@@ -80,9 +80,9 @@ export default function ContactPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="North Coast Outdoor Services on Facebook"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-forest px-4 py-2 text-sm font-semibold text-white shadow-[0_0_0_2px_rgba(16,20,18,0.35),0_0_0_4px_rgba(255,255,255,0.9),0_0_12px_rgba(255,255,255,0.45)] transition hover:bg-forest-deep"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-forest px-4 py-2 text-sm font-semibold text-white shadow-[0_2px_10px_rgba(16,20,18,0.2),0_0_0_2px_rgba(255,255,255,0.85)] transition hover:bg-forest-deep"
               >
-                <FacebookIcon className="h-4 w-4" />
+                <FacebookIcon className="h-4 w-4 text-white" />
                 Facebook
               </a>
               <a
@@ -90,9 +90,9 @@ export default function ContactPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="North Coast Outdoor Services on Instagram"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-yellow px-4 py-2 text-sm font-semibold text-ink shadow-[0_0_0_2px_rgba(16,20,18,0.35),0_0_0_4px_rgba(255,255,255,0.9),0_0_12px_rgba(255,255,255,0.45)] transition hover:bg-[#f0d85a]"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-forest px-4 py-2 text-sm font-semibold text-white shadow-[0_2px_10px_rgba(16,20,18,0.2),0_0_0_2px_rgba(255,255,255,0.85)] transition hover:bg-forest-deep"
               >
-                <InstagramIcon className="h-4 w-4" />
+                <InstagramIcon className="h-4 w-4 text-white" />
                 Instagram
               </a>
             </div>

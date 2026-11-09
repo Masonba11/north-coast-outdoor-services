@@ -29,18 +29,18 @@ export function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="North Coast Outdoor Services on Facebook"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-white text-forest shadow-[0_0_0_2px_rgba(16,20,18,0.25),0_0_0_4px_rgba(255,255,255,0.7),0_0_14px_rgba(255,255,255,0.35)] transition hover:bg-yellow hover:text-ink"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-forest text-white shadow-[0_0_0_2px_rgba(255,255,255,0.55),0_0_14px_rgba(255,255,255,0.4)] transition hover:bg-forest-deep"
             >
-              <FacebookIcon className="h-5 w-5" />
+              <FacebookIcon className="h-5 w-5 text-white" />
             </a>
             <a
               href={business.social.instagram}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="North Coast Outdoor Services on Instagram"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-yellow text-ink shadow-[0_0_0_2px_rgba(16,20,18,0.25),0_0_0_4px_rgba(255,255,255,0.7),0_0_14px_rgba(255,255,255,0.35)] transition hover:bg-white"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-forest text-white shadow-[0_0_0_2px_rgba(255,255,255,0.55),0_0_14px_rgba(255,255,255,0.4)] transition hover:bg-forest-deep"
             >
-              <InstagramIcon className="h-5 w-5" />
+              <InstagramIcon className="h-5 w-5 text-white" />
             </a>
           </div>
         </div>
