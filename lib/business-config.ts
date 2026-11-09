@@ -21,16 +21,17 @@ export const business = {
     height: 535,
     alt: "North Coast Outdoor Services logo",
   },
-  ogImage: "/images/og-share.jpg",
+  ogImage: "/og-image.png",
 } as const;
 
 export const siteConfig = {
   name: business.name,
-  /** Set NEXT_PUBLIC_SITE_URL in production (e.g. https://www.northcoastoutdoorservices.com) */
+  /** Production domain used for canonical/OG URLs when NEXT_PUBLIC_SITE_URL is unset at build time. */
+  productionUrl: "https://north-coast-outdoor-services.vercel.app",
   getUrl() {
     return (
       process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
-      "http://127.0.0.1:3000"
+      this.productionUrl
     );
   },
 } as const;

@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: PageProps) {
     title: service.seoTitle,
     description: service.seoDescription,
     path: service.href,
-    image: service.image,
+    image: "/og-image.png",
     keywords: service.keywords,
   });
 }

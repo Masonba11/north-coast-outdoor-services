@@ -8,6 +8,8 @@ type BuildMetadataInput = {
   image?: string;
   keywords?: string[];
   noIndex?: boolean;
+  openGraphTitle?: string;
+  openGraphDescription?: string;
 };
 
 export function absoluteUrl(path = "/"): string {
@@ -23,13 +25,21 @@ export function buildMetadata({
   image = business.ogImage,
   keywords,
   noIndex = false,
+  openGraphTitle,
+  openGraphDescription,
 }: BuildMetadataInput): Metadata {
   const url = absoluteUrl(path);
   const imageUrl = absoluteUrl(image);
+  const ogTitle = openGraphTitle ?? title;
+  const ogDescription = openGraphDescription ?? description;
 
   const fullTitle = title.includes("North Coast Outdoor Services")
     ? title
     : `${title} | North Coast Outdoor Services`;
+
+  const fullOgTitle = openGraphTitle
+    ? openGraphTitle
+    : fullTitle;
 
   return {
     title: {
@@ -44,8 +54,8 @@ export function buildMetadata({
       ? { index: false, follow: false }
       : { index: true, follow: true },
     openGraph: {
-      title: fullTitle,
-      description,
+      title: fullOgTitle,
+      description: ogDescription,
       url,
       siteName: business.name,
       locale: "en_US",
@@ -55,14 +65,15 @@ export function buildMetadata({
           url: imageUrl,
           width: 1200,
           height: 630,
-          alt: business.name,
+          alt: `${business.name} — Window Cleaning, Pressure Washing & Gutter Cleaning in Vancouver, WA`,
+          type: "image/png",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: fullTitle,
-      description,
+      title: fullOgTitle,
+      description: ogDescription,
       images: [imageUrl],
     },
   };
@@ -78,7 +89,8 @@ export function localBusinessJsonLd() {
     url: absoluteUrl("/"),
     telephone: business.phoneTel,
     email: business.email,
-    image: absoluteUrl(business.logo.path),
+    image: absoluteUrl(business.ogImage),
+    logo: absoluteUrl(business.logo.path),
     areaServed: [
       "Vancouver, WA",
       "Camas, WA",

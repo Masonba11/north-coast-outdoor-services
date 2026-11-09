@@ -10,15 +10,19 @@ import { FinalCTA } from "@/components/FinalCTA";
 import { Gallery } from "@/components/Gallery";
 import { Hero } from "@/components/Hero";
 import { ServiceCard } from "@/components/ServiceCard";
-import { business } from "@/lib/business-config";
 import { getFeaturedLocation, locations } from "@/lib/locations";
 import { buildMetadata } from "@/lib/seo";
 import { services } from "@/lib/services";
 
 export const metadata = buildMetadata({
-  title: `${business.name} | Window Cleaning & Exterior Cleaning Vancouver WA`,
-  description: business.description,
+  title: "Window Cleaning Vancouver WA | North Coast Outdoor Services",
+  description:
+    "Professional window cleaning, pressure washing, and gutter cleaning in Vancouver, WA. Serving Camas, Ridgefield, Battle Ground & surrounding areas. Get a free quote!",
   path: "/",
+  image: "/og-image.png",
+  openGraphTitle: "North Coast Outdoor Services | Vancouver, WA",
+  openGraphDescription:
+    "Professional Window Cleaning, Pressure Washing & Gutter Cleaning in Vancouver and Southwest Washington. Call (360) 213-3784 for a free quote.",
   keywords: [
     "window cleaning Vancouver WA",
     "soft washing Vancouver WA",
