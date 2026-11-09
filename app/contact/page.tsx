@@ -79,7 +79,8 @@ export default function ContactPage() {
                 href={business.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-forest px-4 py-2 text-sm font-semibold text-white transition hover:bg-forest-deep"
+                aria-label="North Coast Outdoor Services on Facebook"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-forest px-4 py-2 text-sm font-semibold text-white shadow-[0_0_0_2px_rgba(255,255,255,0.75),0_0_12px_rgba(255,255,255,0.55)] transition hover:bg-forest-deep"
               >
                 <FacebookIcon className="h-4 w-4" />
                 Facebook
@@ -88,7 +89,8 @@ export default function ContactPage() {
                 href={business.social.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-yellow px-4 py-2 text-sm font-semibold text-ink transition hover:bg-[#f0d85a]"
+                aria-label="North Coast Outdoor Services on Instagram"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-white bg-yellow px-4 py-2 text-sm font-semibold text-ink shadow-[0_0_0_2px_rgba(255,255,255,0.75),0_0_12px_rgba(255,255,255,0.55)] transition hover:bg-[#f0d85a]"
               >
                 <InstagramIcon className="h-4 w-4" />
                 Instagram
