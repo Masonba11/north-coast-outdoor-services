@@ -2,9 +2,9 @@ import { business } from "@/lib/business-config";
 import { FacebookIcon, InstagramIcon } from "@/components/SocialIcons";
 
 const stickerRing =
-  "border-[3px] border-white shadow-[0_0_0_3px_rgba(255,255,255,0.85),0_10px_28px_rgba(16,20,18,0.4),0_0_20px_rgba(255,255,255,0.55)]";
+  "border-[3px] border-white shadow-[0_0_0_2px_rgba(16,20,18,0.55),0_0_0_5px_rgba(255,255,255,0.95),0_10px_28px_rgba(16,20,18,0.35),0_0_18px_rgba(255,255,255,0.45)]";
 const stickerRingHover =
-  "hover:shadow-[0_0_0_3px_rgba(255,255,255,0.95),0_14px_34px_rgba(16,20,18,0.45),0_0_24px_rgba(255,255,255,0.7)]";
+  "hover:shadow-[0_0_0_2px_rgba(16,20,18,0.65),0_0_0_6px_rgba(255,255,255,1),0_14px_34px_rgba(16,20,18,0.4),0_0_22px_rgba(255,255,255,0.6)]";
 
 export function FloatingSocialStickers() {
   return (
